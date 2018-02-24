@@ -24,18 +24,20 @@ enum Operation {
 
 class Calculator {
     
-    var input     : Double
-    var output    : Double
-    var operation : Operation
+    var input          : Double
+    var output         : Double
+    var operation      : Operation
+    var shouldCompound : Bool
     
     init() {
-        input     = 0
-        output    = 0
-        operation = .None
+        input          = 0
+        output         = 0
+        operation      = .None
+        shouldCompound = false
     }
     
-    func receiveInput(digit: Double) {
-        input = input * 10 + digit
+    func receiveInput(digit: Int) {
+        input = input * 10 + Double(digit)
     }
     
     func performOperation(operation: Operation) {
@@ -43,19 +45,28 @@ class Calculator {
         switch operation {
         case .Addition:
             self.operation = .Addition
+            output += input
+            input   = 0
         case .Subtraction:
             self.operation = .Subtraction
+            input  -= output
+            input   = 0
         case .Multiplication:
             self.operation = .Multiplication
+            output *= input
+            input   = 0
         case .Division:
             self.operation = .Division
+            output /= input
+            input   = 0
         case .Clear:
             self.operation = .None
             input          = 0
+            output         = 0
         case .Sign:
-            input *= -1
+            input         *= -1
         case .Percent:
-            input /= 100
+            output        /= 100
         case .Equals:
             
             switch self.operation {
