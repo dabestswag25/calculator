@@ -27,16 +27,25 @@ class Calculator {
     var input          : Double
     var output         : Double
     var operation      : Operation
-    var shouldCompound : Bool
+    var initialInput   : Bool
+    var isEqual        : Bool
     
     init() {
         input          = 0
         output         = 0
         operation      = .None
-        shouldCompound = false
+        initialInput   = true
+        isEqual        = false
     }
     
     func receiveInput(digit: Int) {
+        if isEqual {
+            input        = 0
+            output       = 0
+            operation    = .None
+            initialInput = true
+            isEqual      = false
+        }
         input = input * 10 + Double(digit)
     }
     
@@ -45,42 +54,76 @@ class Calculator {
         switch operation {
         case .Addition:
             self.operation = .Addition
-            output += input
+            if initialInput {
+                output = input
+                initialInput = false
+            }
+            else {
+                output += input
+            }
             input   = 0
         case .Subtraction:
             self.operation = .Subtraction
-            input  -= output
+            if initialInput {
+                output = input
+                initialInput = false
+            }
+            else {
+                output -= input
+            }
             input   = 0
         case .Multiplication:
             self.operation = .Multiplication
-            output *= input
+            if initialInput {
+                output = input
+                initialInput = false
+            }
+            else {
+                output *= input
+            }
             input   = 0
         case .Division:
             self.operation = .Division
-            output /= input
+            if initialInput {
+                output = input
+                initialInput = false
+            }
+            else {
+                output /= input
+            }
             input   = 0
         case .Clear:
             self.operation = .None
             input          = 0
             output         = 0
+            initialInput   = true
+            isEqual        = false
         case .Sign:
             input         *= -1
         case .Percent:
-            output        /= 100
+            input         /= 100
         case .Equals:
+            
+            print(self.operation)
             
             switch self.operation {
                 case .Addition:
                     output += input
+                    isEqual = true
                 case .Subtraction:
                     output -= input
+                    isEqual = true
                 case .Multiplication:
                     output *= input
+                    isEqual = true
                 case .Division:
                     output /= input
+                    isEqual = true
                 default:
                     return
             }
+            
+            
             
         default:
             return

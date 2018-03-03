@@ -37,8 +37,8 @@ class ViewController: UIViewController {
         showOutput()
     }
     @IBAction func digitPress(_ sender: UIButton) {
-        calculator.receiveInput(digit: sender.tag)
-        showInput()
+            calculator.receiveInput(digit: sender.tag)
+            showInput()
     }
     @IBAction func multiply(_ sender: UIButton) {
         calculator.performOperation(operation: .Multiplication)
@@ -53,6 +53,8 @@ class ViewController: UIViewController {
         showOutput()
     }
     @IBAction func equalTo(_ sender: UIButton) {
+        calculator.performOperation(operation: .Equals)
+        showOutput()
     }
     @IBAction func decimal(_ sender: UIButton) {
     }
