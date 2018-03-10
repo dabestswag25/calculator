@@ -57,6 +57,7 @@ class ViewController: UIViewController {
         showOutput()
     }
     @IBAction func decimal(_ sender: UIButton) {
+        calculator.performOperation(operation: .Decimal)
     }
     @IBOutlet weak var displayLabel: UILabel!
     

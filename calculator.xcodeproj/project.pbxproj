@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD077F5120536F7300902C64 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD077F4E20536F7200902C64 /* Comfortaa-Regular.ttf */; };
+		AD077F5220536F7300902C64 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD077F4F20536F7200902C64 /* Comfortaa-Light.ttf */; };
+		AD077F5320536F7300902C64 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD077F5020536F7300902C64 /* Comfortaa-Bold.ttf */; };
 		AD394E972037B4CA00515958 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD394E962037B4CA00515958 /* Calculator.swift */; };
 		ADDBA860202E6E8F007A808B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDBA85F202E6E8F007A808B /* AppDelegate.swift */; };
 		ADDBA862202E6E8F007A808B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDBA861202E6E8F007A808B /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD077F4E20536F7200902C64 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		AD077F4F20536F7200902C64 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		AD077F5020536F7300902C64 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		AD394E962037B4CA00515958 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		ADDBA85C202E6E8F007A808B /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDBA85F202E6E8F007A808B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD077F4D20536F5C00902C64 /* Comfortaa */ = {
+			isa = PBXGroup;
+			children = (
+				AD077F5020536F7300902C64 /* Comfortaa-Bold.ttf */,
+				AD077F4F20536F7200902C64 /* Comfortaa-Light.ttf */,
+				AD077F4E20536F7200902C64 /* Comfortaa-Regular.ttf */,
+			);
+			path = Comfortaa;
+			sourceTree = "<group>";
+		};
 		ADDBA853202E6E8F007A808B = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +72,7 @@
 		ADDBA85E202E6E8F007A808B /* calculator */ = {
 			isa = PBXGroup;
 			children = (
+				AD077F4D20536F5C00902C64 /* Comfortaa */,
 				ADDBA85F202E6E8F007A808B /* AppDelegate.swift */,
 				ADDBA861202E6E8F007A808B /* ViewController.swift */,
 				ADDBA863202E6E8F007A808B /* Main.storyboard */,
@@ -126,9 +143,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD077F5120536F7300902C64 /* Comfortaa-Regular.ttf in Resources */,
 				ADDBA86A202E6E8F007A808B /* LaunchScreen.storyboard in Resources */,
+				AD077F5320536F7300902C64 /* Comfortaa-Bold.ttf in Resources */,
 				ADDBA867202E6E8F007A808B /* Assets.xcassets in Resources */,
 				ADDBA865202E6E8F007A808B /* Main.storyboard in Resources */,
+				AD077F5220536F7300902C64 /* Comfortaa-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

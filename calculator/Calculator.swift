@@ -19,6 +19,7 @@ enum Operation {
     case Clear
     case Sign
     case Percent
+    case Decimal
     
 }
 
@@ -29,6 +30,7 @@ class Calculator {
     var operation      : Operation
     var initialInput   : Bool
     var isEqual        : Bool
+    var decimalPlace   : Int
     
     init() {
         input          = 0
@@ -36,6 +38,7 @@ class Calculator {
         operation      = .None
         initialInput   = true
         isEqual        = false
+        decimalPlace   = 0
     }
     
     func receiveInput(digit: Int) {
@@ -46,10 +49,20 @@ class Calculator {
             initialInput = true
             isEqual      = false
         }
-        input = input * 10 + Double(digit)
+        if decimalPlace >= 0 {
+            input = input * 10 + Double(digit)
+        }
+        else if decimalPlace < 0 {
+            input = input + Double(digit) * pow(10.0, Double(decimalPlace))
+            decimalPlace -= 1
+        }
     }
     
     func performOperation(operation: Operation) {
+        
+        if operation != .Decimal {
+            decimalPlace = 0
+        }
         
         switch operation {
         case .Addition:
@@ -58,6 +71,7 @@ class Calculator {
                 output = input
                 initialInput = false
             }
+            
             else {
                 output += input
             }
@@ -104,8 +118,6 @@ class Calculator {
             input         /= 100
         case .Equals:
             
-            print(self.operation)
-            
             switch self.operation {
                 case .Addition:
                     output += input
@@ -121,10 +133,12 @@ class Calculator {
                     isEqual = true
                 default:
                     return
+                
             }
-            
-            
-            
+        case .Decimal:
+            if decimalPlace == 0 {
+                decimalPlace -= 1
+            }
         default:
             return
         }
