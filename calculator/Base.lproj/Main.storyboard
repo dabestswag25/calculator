@@ -14,6 +14,9 @@
         <array key="Comfortaa-Regular.ttf">
             <string>Comfortaa-Regular</string>
         </array>
+        <array key="SFUIText.ttf">
+            <string>.SFUIText</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -31,39 +34,51 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nZv-ba-YjF">
-                                <rect key="frame" x="16" y="138.5" width="288" height="413.5"/>
+                                <rect key="frame" x="0.0" y="122.5" width="320" height="445.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Orn-R1-Eui">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZD-ft-hVa">
-                                                <rect key="frame" x="0.0" y="0.0" width="72" height="82.5"/>
-                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="AC"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name=".SFUIText" family=".SF UI Text" pointSize="20"/>
+                                                <state key="normal" title="AC">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="clearDisplay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lU8-Ok-wsy"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9k-NB-JwW">
-                                                <rect key="frame" x="72" y="0.0" width="72" height="82.5"/>
-                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="±"/>
+                                                <rect key="frame" x="80" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="25"/>
+                                                <state key="normal" title="±">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="sign:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kHj-EU-Hku"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnA-3d-vIa">
-                                                <rect key="frame" x="144" y="0.0" width="72" height="82.5"/>
+                                                <rect key="frame" x="160" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="%"/>
+                                                <state key="normal" title="%">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="percent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E3a-fC-qm4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sv5-iA-dbp">
-                                                <rect key="frame" x="216" y="0.0" width="72" height="82.5"/>
-                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="÷"/>
+                                                <rect key="frame" x="240" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="25"/>
+                                                <state key="normal" title="÷">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="divide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFI-ND-KQp"/>
                                                 </connections>
@@ -71,36 +86,48 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gTg-1U-dbz">
-                                        <rect key="frame" x="0.0" y="82.5" width="288" height="83"/>
+                                        <rect key="frame" x="0.0" y="89" width="320" height="89"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZB-gs-72s">
-                                                <rect key="frame" x="0.0" y="0.0" width="72" height="83"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="7"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="digitPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2lo-5f-cq3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaY-w9-fIe">
-                                                <rect key="frame" x="72" y="0.0" width="72" height="83"/>
+                                                <rect key="frame" x="80" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="8"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="digitPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bk9-r0-abW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MY-EU-K4w">
-                                                <rect key="frame" x="144" y="0.0" width="72" height="83"/>
+                                                <rect key="frame" x="160" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="9"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="digitPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSP-Zg-HcZ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dS-eA-fS6">
-                                                <rect key="frame" x="216" y="0.0" width="72" height="83"/>
-                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="×"/>
+                                                <rect key="frame" x="240" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="25"/>
+                                                <state key="normal" title="×">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pMe-Gy-lh3"/>
                                                 </connections>
@@ -108,36 +135,48 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oro-pF-53b">
-                                        <rect key="frame" x="0.0" y="165.5" width="288" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="178" width="320" height="89.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0C-Z2-XlW">
-                                                <rect key="frame" x="0.0" y="0.0" width="72" height="82.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="89.5"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="4"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="digitPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hr-F9-24e"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycx-x8-NQP">
-                                                <rect key="frame" x="72" y="0.0" width="72" height="82.5"/>
+                                                <rect key="frame" x="80" y="0.0" width="80" height="89.5"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="5"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="digitPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AM6-Lv-K0b"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBE-aO-x3C">
-                                                <rect key="frame" x="144" y="0.0" width="72" height="82.5"/>
+                                                <rect key="frame" x="160" y="0.0" width="80" height="89.5"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="6"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="digitPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nya-LK-MDA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHV-NK-BNj">
-                                                <rect key="frame" x="216" y="0.0" width="72" height="82.5"/>
-                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="-"/>
+                                                <rect key="frame" x="240" y="0.0" width="80" height="89.5"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="30"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="subtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7rz-hS-VI7"/>
                                                 </connections>
@@ -145,36 +184,48 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sfZ-fW-hLM">
-                                        <rect key="frame" x="0.0" y="248" width="288" height="83"/>
+                                        <rect key="frame" x="0.0" y="267.5" width="320" height="89"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UH-OG-mAj">
-                                                <rect key="frame" x="0.0" y="0.0" width="72" height="83"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="1"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="digitPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLA-NZ-VXw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUU-Dm-Ckv">
-                                                <rect key="frame" x="72" y="0.0" width="72" height="83"/>
+                                                <rect key="frame" x="80" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="2"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="digitPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uMa-lB-cwt"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AJ-0N-r36">
-                                                <rect key="frame" x="144" y="0.0" width="72" height="83"/>
+                                                <rect key="frame" x="160" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="3"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="digitPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIx-aG-M6f"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmc-X6-ad9">
-                                                <rect key="frame" x="216" y="0.0" width="72" height="83"/>
-                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="+"/>
+                                                <rect key="frame" x="240" y="0.0" width="80" height="89"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="25"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zck-oB-DbT"/>
                                                 </connections>
@@ -182,28 +233,37 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="pVe-Yg-Biy">
-                                        <rect key="frame" x="0.0" y="331" width="288" height="82.5"/>
+                                        <rect key="frame" x="0.0" y="356.5" width="320" height="89"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8L-uy-5Im">
-                                                <rect key="frame" x="0.0" y="0.0" width="144" height="82.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="89"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="0"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="digitPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ym-wk-Xae"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCZ-z4-dc8">
-                                                <rect key="frame" x="144" y="0.0" width="72.5" height="82.5"/>
-                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="."/>
+                                                <rect key="frame" x="160" y="0.0" width="80.5" height="89"/>
+                                                <color key="backgroundColor" red="0.017613556236028671" green="0.022114256396889687" blue="0.0080898003652691841" alpha="0.13444456339999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="30"/>
+                                                <state key="normal" title=".">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="decimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i92-TH-Tbw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dr-M4-Dom">
-                                                <rect key="frame" x="216.5" y="0.0" width="71.5" height="82.5"/>
-                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
-                                                <state key="normal" title="="/>
+                                                <rect key="frame" x="240.5" y="0.0" width="79.5" height="89"/>
+                                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="25"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="equalTo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yj-yh-IJn"/>
                                                 </connections>
@@ -221,10 +281,10 @@
                         <constraints>
                             <constraint firstItem="akc-uy-khY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Vh-NG-Zvj"/>
                             <constraint firstItem="akc-uy-khY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-200" id="Asw-Ze-wSg"/>
-                            <constraint firstItem="nZv-ba-YjF" firstAttribute="top" secondItem="akc-uy-khY" secondAttribute="bottom" constant="16" id="HKp-sN-tU7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nZv-ba-YjF" secondAttribute="bottom" constant="16" id="KJT-Mh-haQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nZv-ba-YjF" secondAttribute="trailing" constant="16" id="O0O-kZ-pL3"/>
-                            <constraint firstItem="nZv-ba-YjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aLK-nz-swf"/>
+                            <constraint firstItem="nZv-ba-YjF" firstAttribute="top" secondItem="akc-uy-khY" secondAttribute="bottom" id="HKp-sN-tU7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nZv-ba-YjF" secondAttribute="bottom" id="KJT-Mh-haQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nZv-ba-YjF" secondAttribute="trailing" id="O0O-kZ-pL3"/>
+                            <constraint firstItem="nZv-ba-YjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aLK-nz-swf"/>
                             <constraint firstAttribute="trailing" secondItem="akc-uy-khY" secondAttribute="trailing" constant="16" id="bIQ-Mi-WDN"/>
                             <constraint firstItem="akc-uy-khY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="lPp-7l-pXV"/>
                         </constraints>
